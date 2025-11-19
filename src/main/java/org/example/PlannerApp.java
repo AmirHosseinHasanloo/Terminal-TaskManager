@@ -4,9 +4,6 @@ import org.example.Services.CommandLine;
 import org.example.Services.ICommandLine;
 import org.example.Services.IPlanRepository;
 import org.example.Services.PlanRepository;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class PlannerApp {
@@ -21,14 +18,15 @@ public class PlannerApp {
     }
 
     public void run() {
+        System.out.println("Welcome to hackers day planner\n");
         while (true) {
-            System.out.printf("Welcome to hackers day planner\n");
-
-            System.out.printf("What do you want to do? wrote it down here:");
+            System.out.println("What do you want to do? wrote it down here:");
             planRepository.Create(scanner.nextLine());
 
+            System.out.println("For additional help on usage --help :");
+
             if (commandRunner.CommandRun()) {
-                break;
+                return;
             }
         }
     }
