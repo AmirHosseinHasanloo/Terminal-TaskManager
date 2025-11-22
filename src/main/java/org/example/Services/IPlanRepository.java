@@ -1,6 +1,5 @@
 package org.example.Services;
 
-import java.util.Dictionary;
 import java.util.List;
 
 public interface IPlanRepository {
