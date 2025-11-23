@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.CommandEnums.CommandEnum;
 import org.example.Services.CommandLine;
 import org.example.Services.ICommandLine;
 import org.example.Services.IPlanRepository;
@@ -20,14 +21,11 @@ public class PlannerApp {
     public void run() {
         System.out.println("Welcome to hackers day planner\n");
         while (true) {
-            System.out.println("What do you want to do? wrote it down here:");
-            planRepository.Create(scanner.nextLine());
+            System.out.println("For help on usage --help :");
 
-            System.out.println("For additional help on usage --help :");
-
-            if (commandRunner.CommandRun()) {
-                return;
-            }
+//            if (commandRunner.CommandRun()) {
+//                return;
+//            }
         }
     }
 

@@ -6,5 +6,6 @@ public enum CommandEnum {
     READ,
     UPDATE,
     DELETE,
-    LIST
+    LIST,
+    ERROR
 }
