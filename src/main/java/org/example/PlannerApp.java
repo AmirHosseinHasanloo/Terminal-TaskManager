@@ -1,6 +1,5 @@
 package org.example;
 
-import org.example.CommandEnums.CommandEnum;
 import org.example.Services.CommandLine;
 import org.example.Services.ICommandLine;
 import org.example.Services.IPlanRepository;
@@ -19,13 +18,12 @@ public class PlannerApp {
     }
 
     public void run() {
-        System.out.println("Welcome to hackers day planner\n");
+        System.out.println("Welcome to hackers task planner\n");
         while (true) {
             System.out.println("For help on usage --help :");
 
-//            if (commandRunner.CommandRun()) {
-//                return;
-//            }
+            // TODO: Create An Engine that makes choices with Command runner output
+            commandRunner.Command();
         }
     }
 
